@@ -1,0 +1,69 @@
+
+body{
+    background-color: rgb(176, 205, 230);
+    background-image: url(background.png.webp);
+    background-size: 92%;
+
+}
+nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    text-decoration: wavy;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+h1{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: double;
+    color: rgba(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: wavy;
+    text-align: center;
+    padding: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+h3{
+    text-align: center;
+    text-decoration: double;
+    color: aliceblue;   
+    text-shadow: 1px 1px #000;
+}
+form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-decoration-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #000;
+    transform: translate(0%,0%);
+}
+form2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-decoration-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #000;
+}   
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+input{
+    border-radius: 2px;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 15px
+}

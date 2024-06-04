@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento Barbearia</title>
+    <h1>Agende seu horário</h1>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        div{
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 30%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+        }
+        button:hover{
+         background-color: deepskyblue;
+         cursor: pointer;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        
+            
+        
+    <style>
+        div{
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 30%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            transform: translate(117.5%,900%)
+        }
+        button:hover{
+         background-color: deepskyblue;
+         cursor: pointer;
+        }
+        
+    </style>
+        <form method="POST" action="/home">
+            <nav>
+                <ul>
+                    
+                    <label for="date">Data:</label>
+                    
+                    <input type="date" id="date" name="date" required><br><br>
+                    
+                    <label for="period">Período:</label>
+                    
+                    <select id="period" name="period">
+                    
+                    <option value="morning">Manhã</option>
+                    
+                    <option value="afternoon">Tarde</option>
+                    
+                    <option value="evening">Noite</option>    
+                           
+                    <label for="time">Horário:</label>
+                        
+                    <select id="time" name="time"></select><br><br>
+
+                    <label>Serviços:</label><br>
+                        
+                    <input type="checkbox" name="service" value="eyebrows" data-price="10"> Sobrancelha: R$10,00<br>
+                        
+                    <input type="checkbox" name="service" value="beard" data-price="25"> Barba: R$25,00<br>
+                        
+                    <input type="checkbox" name="service" value="haircut" data-price="30"> Corte: R$30,00<br>
+                        
+                    <input type="checkbox" name="service" value="cut_eyebrows" data-price="35"> Corte + Sobrancelha: R$35,00<br>
+                        
+                    <input type="checkbox" name="service" value="cut_beard" data-price="50"> Corte + Barba: R$50,00<br>
+                            
+                    <p>Total: R$<span id="total">0</span></p>    
+                </ul>
+            </nav>
+        </form>
+    </div>
+    <nav>
+        <button type="submit">Agendar</button>
+    </nav>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

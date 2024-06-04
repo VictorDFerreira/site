@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <h1>Não tem uma conta? Bora resolver isso.</h1>
+    <h1>Cadastro</h1>
+    <style>
+        div{
+            background-color: rgba(12, 0, 32, 0.5);
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            padding: 5px;
+            transform: translate(-50%, -35%);
+            border-radius: 15px;
+            color: white;
+        }
+        input{
+            border-radius: 2px;
+            padding: 5px;
+            border-radius: 15px;
+            border-color: rgb(0, 0, 0);
+            outline: none;
+            font-size: 15px;
+            
+        }
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 30%;
+            border-radius: 10px;
+            color: rgb(225, 255, 255);
+            font-size: 15px;
+        }
+        button:hover{
+         background-color: deepskyblue;
+         cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div>
+        <form method="POST" action="/register">
+            <nav>
+                <ul>
+                    
+                    <label for="first_name">Nome:</label>
+                    <input type="text" id="first_name" name="first_name" required><br><br>
+                    <label for="last_name">Sobrenome:</label>
+                    <input type="text" id="last_name" name="last_name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="confirm_password">Confirmar Senha:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+                        
+                    </ul>
+                </nav>
+                <button type="submit">Cadastrar</button>
+            <button class="voltar"><a href="/login" class="fonte">Voltar</a></button>
+            </div>
+        </form>
+</body>
+</html>

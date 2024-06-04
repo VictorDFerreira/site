@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmação de Agendamento</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmação de Agendamento</h1>
+        <p>Data: {{ date }}</p>
+        <p>Horário: {{ time }}</p>
+        <p>Serviços:</p>
+        <ul>
+            {% for service in services %}
+            <li>{{ service }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
